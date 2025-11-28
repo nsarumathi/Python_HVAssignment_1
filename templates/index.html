@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Config Data</title>
+</head>
+
+<h2>Configuration File Parser Results:</h2>
+<table border="1" cellspacing="0" cellpadding="5">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Database</th>
+            <th>Server</th>
+        </tr>
+    </thead>
+<tbody>
+{% if data %}
+    {% for item in data %}
+     <tr>
+        <td>{{item._id}}</td>
+        <td>{{item.Database }}</td>
+        <td>{{item.Server }}</td>
+     </tr>
+    {% endfor %}
+{% else %}
+    <p>No data found in database.</p>
+{% endif %}
+</tbody>
+</table>
+</html>
