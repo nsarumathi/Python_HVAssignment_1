@@ -17,7 +17,8 @@ def check_password_strength(password):
 
 
 # ---- MAIN SCRIPT ----
-password = input("Enter a password to check strength: ")
+//password = input("Enter a password to check strength: ")
+password = "TestPassword123!"
 
 if check_password_strength(password):
     print("✔ Strong Password! Good job.")
