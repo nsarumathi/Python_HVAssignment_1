@@ -34,7 +34,7 @@ pipeline {
                     steps {
                         sh '''
                         . venv/bin/activate
-                        python assgmnt2.py
+                        python factorial.py
                         '''
                     }
                 }
@@ -43,7 +43,7 @@ pipeline {
                     steps {
                         sh '''
                         . venv/bin/activate
-                        python assgmnt3.py
+                        python primeno.py
                         '''
                     }
                 }
